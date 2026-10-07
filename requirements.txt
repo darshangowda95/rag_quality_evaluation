@@ -1,0 +1,17 @@
+# Lab 2.4 - RAG Evaluation & Optimization
+# Python 3.11+
+
+# --- Core evaluation (required) ---
+numpy>=1.26              # Vector operations for cosine similarity
+python-dotenv>=1.0       # Environment variable management
+
+# --- HTTP client for LLM APIs (optional, enables LLM-as-judge) ---
+httpx>=0.27              # Async HTTP client
+langchain-openai>=0.1    # OpenRouter/OpenAI client wrapper
+
+# --- Testing ---
+pytest>=8.0              # Test framework
+
+# --- Optional: Streamlit UI ---
+streamlit>=1.28          # Interactive web UI (optional)
+plotly>=5.17             # Interactive charts for Streamlit (optional)

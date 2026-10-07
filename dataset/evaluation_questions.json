@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-09-15",
+    "description": "Banking policy evaluation dataset for RAG quality assessment",
+    "domain": "Banking (KYC, AML, Wire Transfers, Fraud, Compliance)",
+    "total_questions": 27
+  },
+  "test_cases": [
+    {
+      "id": "q001",
+      "question": "How long must KYC customer identification records be retained?",
+      "expected_answer": "KYC customer identification records must be retained for at least 5 years after account closure.",
+      "ground_truth_context_ids": ["kyc_retention_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q002",
+      "question": "What is the daily wire transfer limit for retail customers?",
+      "expected_answer": "The daily wire transfer limit for retail customers is $5,000 for domestic wires and $2,500 for international wires.",
+      "ground_truth_context_ids": ["wire_limits_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q003",
+      "question": "When must a Suspicious Activity Report (SAR) be filed?",
+      "expected_answer": "A SAR must be filed within 30 days of detecting suspicious activity that involves $5,000 or more in aggregate, or immediately for suspected terrorism financing regardless of amount.",
+      "ground_truth_context_ids": ["aml_sar_001", "aml_sar_002"],
+      "category": "factual_recall",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q004",
+      "question": "What are the three required elements of customer due diligence under KYC?",
+      "expected_answer": "The three required elements are: (1) identity verification using government-issued ID, (2) beneficial ownership identification for entities, and (3) understanding the nature and purpose of the customer relationship.",
+      "ground_truth_context_ids": ["kyc_cdd_001"],
+      "category": "multi_step",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q005",
+      "question": "If a customer requests a wire transfer of $15,000, what additional steps are required?",
+      "expected_answer": "For wire transfers exceeding $10,000, additional verification is required including: enhanced identity verification, source of funds documentation, and approval from a branch manager or compliance officer.",
+      "ground_truth_context_ids": ["wire_limits_002", "wire_enhanced_001"],
+      "category": "multi_step",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q006",
+      "question": "What is the maximum overdraft protection amount for checking accounts?",
+      "expected_answer": "The maximum overdraft protection is $500 for standard checking accounts and $1,000 for premium checking accounts, subject to approval.",
+      "ground_truth_context_ids": ["overdraft_limits_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q007",
+      "question": "How are suspicious patterns in transaction monitoring identified?",
+      "expected_answer": "Suspicious patterns are identified through automated monitoring systems that flag: (1) structuring (multiple transactions just below reporting thresholds), (2) unusual geographic locations, (3) inconsistent transaction patterns with customer profile, and (4) rapid movement of funds.",
+      "ground_truth_context_ids": ["fraud_monitoring_001", "aml_patterns_001"],
+      "category": "multi_step",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q008",
+      "question": "What documentation is required for business account opening?",
+      "expected_answer": "Business account opening requires: articles of incorporation, EIN (Employer Identification Number), business license, beneficial owner identification (individuals owning 25% or more), and authorized signer documentation.",
+      "ground_truth_context_ids": ["kyc_business_001"],
+      "category": "multi_step",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q009",
+      "question": "Can a customer opt out of fraud monitoring on their account?",
+      "expected_answer": "No, customers cannot opt out of fraud monitoring. Federal regulations require banks to maintain continuous monitoring for fraud and suspicious activity on all accounts.",
+      "ground_truth_context_ids": ["fraud_mandatory_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q010",
+      "question": "What is the minimum credit score required for personal loan approval?",
+      "expected_answer": "The bank does not have a single minimum credit score requirement. Loan decisions consider multiple factors including credit score (typically 650+), debt-to-income ratio, employment history, and collateral.",
+      "ground_truth_context_ids": ["lending_criteria_001"],
+      "category": "factual_recall",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q011",
+      "question": "How long does privacy policy allow customer data to be retained?",
+      "expected_answer": "Customer data is retained for the duration of the customer relationship plus 7 years after account closure, unless a longer retention period is required by law or regulation.",
+      "ground_truth_context_ids": ["privacy_retention_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q012",
+      "question": "What are the reporting thresholds for Currency Transaction Reports (CTRs)?",
+      "expected_answer": "CTRs must be filed for cash transactions exceeding $10,000 in a single day, including multiple related transactions that aggregate to more than $10,000.",
+      "ground_truth_context_ids": ["aml_ctr_001"],
+      "category": "factual_recall",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q013",
+      "question": "If a customer is flagged by OFAC sanctions screening, what is the required response time and procedure?",
+      "expected_answer": "OFAC sanctions matches require immediate action: (1) freeze the account within 10 minutes of detection, (2) escalate to compliance officer immediately, (3) file a blocking report with OFAC within 10 business days, and (4) do not notify the customer until cleared by compliance.",
+      "ground_truth_context_ids": ["sanctions_ofac_001", "sanctions_response_001"],
+      "category": "multi_step",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q014",
+      "question": "What is the fee for insufficient funds (NSF)?",
+      "expected_answer": "The insufficient funds fee is $35 per returned item, with a maximum of 3 NSF fees per day ($105 total).",
+      "ground_truth_context_ids": ["fees_nsf_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q015",
+      "question": "Can customers share account access with family members, and what are the requirements?",
+      "expected_answer": "Yes, customers can add authorized users or joint account holders. Authorized users require: government ID, completion of authorization form, and may have limited permissions set by the primary account holder. Joint account holders have full access and undergo the same KYC verification as primary holders.",
+      "ground_truth_context_ids": ["account_access_001"],
+      "category": "multi_step",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q016",
+      "question": "What is enhanced due diligence (EDD) and when is it required?",
+      "expected_answer": "Enhanced due diligence is additional scrutiny beyond standard CDD, required for high-risk customers including: Politically Exposed Persons (PEPs), customers from high-risk jurisdictions, cash-intensive businesses, and non-face-to-face relationships. EDD includes source of wealth verification, ongoing monitoring, and senior management approval.",
+      "ground_truth_context_ids": ["kyc_edd_001"],
+      "category": "multi_document",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q017",
+      "question": "How are foreign exchange transactions monitored for AML compliance?",
+      "expected_answer": "Foreign exchange transactions are monitored for: (1) amounts exceeding $1,000, (2) frequency and pattern analysis, (3) destination country risk assessment, (4) comparison against customer profile, and (5) automatic escalation for high-risk jurisdictions.",
+      "ground_truth_context_ids": ["aml_forex_001", "fraud_monitoring_002"],
+      "category": "multi_document",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q018",
+      "question": "What is the maximum daily ATM withdrawal limit?",
+      "expected_answer": "The daily ATM withdrawal limit is $500 for standard accounts and $1,000 for premium accounts. Customers can request temporary limit increases by contacting customer service.",
+      "ground_truth_context_ids": ["atm_limits_001"],
+      "category": "factual_recall",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q019",
+      "question": "If a customer disputes a fraudulent transaction, what is the bank's liability and timeline for resolution?",
+      "expected_answer": "Under Regulation E, the bank must provisionally credit the customer within 10 business days of notification for unauthorized EFTs. Investigation must be completed within 45 days (90 days for new accounts or foreign transactions). The bank is liable for unauthorized transactions if the customer reports within 60 days, except for the first $50 if reported within 2 days.",
+      "ground_truth_context_ids": ["fraud_liability_001", "fraud_disputes_001"],
+      "category": "multi_document",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q020",
+      "question": "What cryptocurrency transactions are allowed for retail customers?",
+      "expected_answer": "The bank does not currently offer cryptocurrency services to retail customers. Customers cannot use bank accounts to purchase cryptocurrency from exchanges, and incoming wires from cryptocurrency exchanges are subject to enhanced scrutiny and may be rejected.",
+      "ground_truth_context_ids": ["crypto_policy_001"],
+      "category": "edge_case",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q021",
+      "question": "How do I invest in stocks through the bank?",
+      "expected_answer": "This question is outside the scope of banking policy documentation. The available policies cover account operations, compliance, and lending, but do not address investment services. Please contact the bank's investment services department for information about brokerage accounts.",
+      "ground_truth_context_ids": [],
+      "category": "out_of_scope",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q022",
+      "question": "What is the current federal funds rate?",
+      "expected_answer": "This question asks for real-time market data that is not contained in the bank's internal policy documents. The federal funds rate is set by the Federal Reserve and changes over time. This information is outside the scope of the policy knowledge base.",
+      "ground_truth_context_ids": [],
+      "category": "out_of_scope",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "q023",
+      "question": "A customer wants to wire $4,000 to a known high-risk country. What compliance steps are required?",
+      "expected_answer": "Wires to high-risk countries require: (1) enhanced identity verification, (2) purpose of wire documentation, (3) beneficiary information including full name and address, (4) sanctions screening against OFAC lists, (5) supervisor approval, and (6) inclusion in enhanced monitoring reports even if below SAR threshold.",
+      "ground_truth_context_ids": ["wire_high_risk_001", "sanctions_screening_001", "aml_edd_002"],
+      "category": "multi_document",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q024",
+      "question": "Can a customer request their KYC records be deleted?",
+      "expected_answer": "No, customers cannot request deletion of KYC records. Federal regulations require banks to retain customer identification and due diligence records for at least 5 years after account closure. This is a mandatory regulatory requirement that cannot be waived.",
+      "ground_truth_context_ids": ["kyc_retention_001", "privacy_limitations_001"],
+      "category": "edge_case",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q025",
+      "question": "What is the process for closing a deceased customer's account?",
+      "expected_answer": "Closing a deceased customer's account requires: (1) certified death certificate, (2) identification of executor or administrator with letters testamentary, (3) completion of estate claim form, (4) verification of no outstanding debts or holds, and (5) funds disbursed according to estate instructions or state law if no will exists.",
+      "ground_truth_context_ids": ["account_closure_001", "estate_procedures_001"],
+      "category": "multi_step",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q026",
+      "question": "A customer receives 8 separate deposits of $1,500 each in one day. Is this reportable?",
+      "expected_answer": "Yes, this is potentially structured to avoid the $10,000 CTR threshold (8 x $1,500 = $12,000 total). This pattern should be flagged for SAR filing as suspected structuring, even though no single transaction exceeds reporting limits. The bank should investigate whether these deposits are related.",
+      "ground_truth_context_ids": ["aml_structuring_001", "aml_ctr_001"],
+      "category": "edge_case",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "q027",
+      "question": "If a customer's KYC information is found to be incomplete 2 years after account opening, what action is required?",
+      "expected_answer": "Incomplete KYC information requires remediation: (1) immediate outreach to customer to collect missing information, (2) account placed under enhanced monitoring until remediated, (3) transaction restrictions may be imposed (e.g., limiting wire transfers), (4) escalation to compliance if customer does not respond within 30 days, and (5) potential account closure if remediation cannot be completed.",
+      "ground_truth_context_ids": ["kyc_remediation_001", "account_restrictions_001"],
+      "category": "multi_step",
+      "difficulty": "advanced"
+    }
+  ]
+}

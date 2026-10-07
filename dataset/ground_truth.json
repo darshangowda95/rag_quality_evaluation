@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Ground truth context mappings for evaluation questions",
+    "total_contexts": 45
+  },
+  "contexts": {
+    "kyc_retention_001": {
+      "doc_id": "KYC_Policy_v2.3",
+      "chunk_id": "section_5_1",
+      "text": "Customer identification records, including government-issued identification documents, proof of address, and beneficial ownership information, must be retained for a minimum of 5 years following account closure. This retention period complies with BSA/AML requirements and may be extended if records are subject to ongoing investigation or litigation hold.",
+      "topics": ["KYC", "retention", "compliance", "record keeping"]
+    },
+    "wire_limits_001": {
+      "doc_id": "Wire_Transfer_Policy_v1.8",
+      "chunk_id": "section_2_1",
+      "text": "Daily wire transfer limits for retail customers are set at $5,000 for domestic wires and $2,500 for international wires. These limits are designed to balance customer convenience with fraud prevention and AML risk management.",
+      "topics": ["wire transfers", "limits", "retail banking"]
+    },
+    "aml_sar_001": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_7_2",
+      "text": "A Suspicious Activity Report (SAR) must be filed within 30 calendar days of the initial detection of facts that may constitute suspicious activity involving transactions aggregating $5,000 or more.",
+      "topics": ["AML", "SAR", "reporting", "suspicious activity"]
+    },
+    "aml_sar_002": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_7_3",
+      "text": "For suspected terrorism financing, a SAR must be filed immediately regardless of the dollar amount involved. Terrorism financing cases require immediate escalation to the BSA Officer and senior management.",
+      "topics": ["AML", "SAR", "terrorism financing", "escalation"]
+    },
+    "kyc_cdd_001": {
+      "doc_id": "KYC_Policy_v2.3",
+      "chunk_id": "section_3_1",
+      "text": "Customer Due Diligence (CDD) requires three core elements: (1) identity verification through government-issued photographic identification, (2) beneficial ownership identification for legal entity customers to identify individuals owning 25% or more, and (3) understanding the nature and purpose of customer relationships to develop a risk profile.",
+      "topics": ["KYC", "CDD", "customer due diligence", "beneficial ownership"]
+    },
+    "wire_limits_002": {
+      "doc_id": "Wire_Transfer_Policy_v1.8",
+      "chunk_id": "section_2_3",
+      "text": "Wire transfers exceeding $10,000 require enhanced verification procedures including secondary identity confirmation and source of funds documentation.",
+      "topics": ["wire transfers", "enhanced verification", "large transactions"]
+    },
+    "wire_enhanced_001": {
+      "doc_id": "Wire_Transfer_Policy_v1.8",
+      "chunk_id": "section_4_1",
+      "text": "Enhanced verification for large wire transfers includes: callback verification to a known customer phone number, review of recent account activity for anomalies, documentation of the business purpose of the wire, and approval from a branch manager or compliance officer.",
+      "topics": ["wire transfers", "enhanced verification", "approval process"]
+    },
+    "overdraft_limits_001": {
+      "doc_id": "Overdraft_Policy_v2.0",
+      "chunk_id": "section_1_2",
+      "text": "Overdraft protection limits are $500 for standard checking accounts and $1,000 for premium checking accounts, subject to creditworthiness approval. Overdraft fees of $35 per item apply.",
+      "topics": ["overdraft", "limits", "fees", "checking accounts"]
+    },
+    "fraud_monitoring_001": {
+      "doc_id": "Fraud_Prevention_Procedures_v2.5",
+      "chunk_id": "section_3_1",
+      "text": "Automated fraud monitoring systems flag suspicious patterns including: structuring behavior (multiple transactions designed to avoid reporting thresholds), unusual geographic locations inconsistent with customer profile, atypical transaction patterns, and rapid movement of funds through accounts.",
+      "topics": ["fraud monitoring", "suspicious patterns", "automated systems"]
+    },
+    "aml_patterns_001": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_4_2",
+      "text": "Common money laundering patterns include: layering (complex series of transactions to obscure source), structuring (breaking large amounts into smaller transactions), use of multiple accounts, frequent wire transfers to high-risk jurisdictions, and transactions inconsistent with stated business purpose.",
+      "topics": ["AML", "money laundering", "red flags", "patterns"]
+    },
+    "kyc_business_001": {
+      "doc_id": "KYC_Policy_v2.3",
+      "chunk_id": "section_6_1",
+      "text": "Business account opening requires: articles of incorporation or formation documents, Employer Identification Number (EIN), business license, beneficial ownership certification identifying individuals owning 25% or more of the entity, authorized signer resolution, and control person identification.",
+      "topics": ["KYC", "business accounts", "documentation", "beneficial ownership"]
+    },
+    "fraud_mandatory_001": {
+      "doc_id": "Fraud_Prevention_Procedures_v2.5",
+      "chunk_id": "section_1_3",
+      "text": "Fraud monitoring and AML transaction surveillance are mandatory for all accounts and cannot be disabled or opted out by customers. These are regulatory requirements under the Bank Secrecy Act and Patriot Act.",
+      "topics": ["fraud monitoring", "mandatory", "AML", "regulatory requirements"]
+    },
+    "lending_criteria_001": {
+      "doc_id": "Lending_Policy_v4.2",
+      "chunk_id": "section_2_1",
+      "text": "Personal loan underwriting considers multiple factors: credit score (generally 650 or higher for unsecured loans), debt-to-income ratio (preferably below 40%), employment stability (minimum 2 years), and collateral value for secured loans. No single factor is determinative; decisions are made holistically.",
+      "topics": ["lending", "credit criteria", "underwriting", "personal loans"]
+    },
+    "privacy_retention_001": {
+      "doc_id": "Privacy_Notice_v3.0",
+      "chunk_id": "section_4_3",
+      "text": "Customer data is retained for the duration of the customer relationship plus 7 years after account closure unless a longer retention period is mandated by specific regulations (e.g., BSA requires 5 years for CIP records, securities regulations require 6 years for certain records).",
+      "topics": ["privacy", "data retention", "customer data"]
+    },
+    "aml_ctr_001": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_6_1",
+      "text": "Currency Transaction Reports (CTRs) must be filed with FinCEN for currency transactions exceeding $10,000 in a single business day. This includes multiple currency transactions that appear to be related and aggregate to more than $10,000.",
+      "topics": ["AML", "CTR", "currency transactions", "reporting"]
+    },
+    "sanctions_ofac_001": {
+      "doc_id": "Sanctions_Screening_Policy_v2.1",
+      "chunk_id": "section_5_1",
+      "text": "When a customer or transaction matches OFAC Specially Designated Nationals (SDN) list or other sanctions lists, immediate action is required: freeze the account or block the transaction within 10 minutes, do not notify the customer, and escalate to the BSA/Sanctions Officer immediately.",
+      "topics": ["sanctions", "OFAC", "SDN list", "blocking"]
+    },
+    "sanctions_response_001": {
+      "doc_id": "Sanctions_Screening_Policy_v2.1",
+      "chunk_id": "section_5_3",
+      "text": "A blocking report must be filed with OFAC within 10 business days of blocking a transaction or freezing an account due to sanctions match. Blocked funds must be held in an interest-bearing blocked account. The customer may not be informed until OFAC provides guidance or clearance.",
+      "topics": ["sanctions", "OFAC", "blocking reports", "procedures"]
+    },
+    "fees_nsf_001": {
+      "doc_id": "Fee_Schedule_v5.3",
+      "chunk_id": "section_3_1",
+      "text": "Insufficient funds (NSF) fee is $35 per returned item. A maximum of 3 NSF fees may be charged per business day, for a daily maximum of $105. No NSF fees are charged on items of $5 or less.",
+      "topics": ["fees", "NSF", "insufficient funds", "account charges"]
+    },
+    "account_access_001": {
+      "doc_id": "Account_Management_Policy_v3.4",
+      "chunk_id": "section_2_2",
+      "text": "Account access can be granted to authorized users (limited permissions set by primary holder) or joint account holders (full equal access). Authorized users must present government ID and complete authorization forms. Joint account holders undergo full KYC verification identical to primary account holders and have equal withdrawal and transaction rights.",
+      "topics": ["account access", "joint accounts", "authorized users"]
+    },
+    "kyc_edd_001": {
+      "doc_id": "KYC_Policy_v2.3",
+      "chunk_id": "section_8_1",
+      "text": "Enhanced Due Diligence (EDD) is required for high-risk customers: Politically Exposed Persons (PEPs), customers from high-risk jurisdictions identified by FATF, cash-intensive businesses (e.g., MSBs, pawn shops, casinos), and non-face-to-face relationships. EDD procedures include: source of wealth documentation, enhanced ongoing monitoring with quarterly reviews, and senior management approval for account opening.",
+      "topics": ["KYC", "EDD", "enhanced due diligence", "high-risk customers", "PEPs"]
+    },
+    "aml_forex_001": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_12_1",
+      "text": "Foreign exchange transactions exceeding $1,000 are subject to automated monitoring for: frequency and patterns inconsistent with customer profile, destination countries with elevated AML risk (as designated by FATF), and volume that exceeds established thresholds based on customer type.",
+      "topics": ["AML", "foreign exchange", "forex", "monitoring"]
+    },
+    "fraud_monitoring_002": {
+      "doc_id": "Fraud_Prevention_Procedures_v2.5",
+      "chunk_id": "section_6_2",
+      "text": "International wire transfers and foreign exchange transactions are automatically escalated for manual review when destined for high-risk jurisdictions as identified in the bank's geographic risk matrix, or when the transaction is inconsistent with the customer's known business activities.",
+      "topics": ["fraud monitoring", "international transfers", "geographic risk"]
+    },
+    "atm_limits_001": {
+      "doc_id": "ATM_Card_Policy_v2.8",
+      "chunk_id": "section_4_1",
+      "text": "Daily ATM withdrawal limits are $500 for standard accounts and $1,000 for premium accounts. Temporary limit increases up to $2,000 can be requested by contacting customer service and are subject to fraud review.",
+      "topics": ["ATM", "withdrawal limits", "daily limits"]
+    },
+    "fraud_liability_001": {
+      "doc_id": "Fraud_Prevention_Procedures_v2.5",
+      "chunk_id": "section_9_1",
+      "text": "Under Regulation E (Electronic Fund Transfer Act), the bank's liability for unauthorized electronic fund transfers depends on how quickly the customer reports: $0 if reported before any unauthorized transfer, $50 maximum if reported within 2 business days, $500 maximum if reported within 60 days, unlimited liability if not reported within 60 days.",
+      "topics": ["fraud liability", "Regulation E", "unauthorized transactions", "customer protection"]
+    },
+    "fraud_disputes_001": {
+      "doc_id": "Fraud_Prevention_Procedures_v2.5",
+      "chunk_id": "section_9_3",
+      "text": "Upon receipt of a timely fraud claim, the bank must provisionally credit the customer's account within 10 business days. The investigation must be completed within 45 days (90 days for new accounts less than 30 days old or for foreign-initiated transactions). If the claim is found to be valid, the provisional credit becomes permanent.",
+      "topics": ["fraud disputes", "provisional credit", "investigation timeline", "Regulation E"]
+    },
+    "crypto_policy_001": {
+      "doc_id": "Cryptocurrency_Policy_v1.2",
+      "chunk_id": "section_1_1",
+      "text": "The bank does not offer cryptocurrency trading, custody, or related services to retail customers. Transactions with cryptocurrency exchanges are subject to enhanced due diligence. Outgoing wires to known cryptocurrency exchanges require additional verification. Incoming wires from cryptocurrency exchanges may be rejected or subject to source of funds verification.",
+      "topics": ["cryptocurrency", "crypto", "policy", "prohibited activities"]
+    },
+    "wire_high_risk_001": {
+      "doc_id": "Wire_Transfer_Policy_v1.8",
+      "chunk_id": "section_6_1",
+      "text": "Wire transfers to high-risk jurisdictions (as identified in the bank's geographic risk assessment) require enhanced controls regardless of amount: purpose of wire documentation, beneficiary verification including full name and physical address, enhanced identity verification of the sender, and supervisory approval from a manager or compliance officer.",
+      "topics": ["wire transfers", "high-risk countries", "enhanced controls"]
+    },
+    "sanctions_screening_001": {
+      "doc_id": "Sanctions_Screening_Policy_v2.1",
+      "chunk_id": "section_3_1",
+      "text": "All wire transfer beneficiaries must be screened against OFAC SDN list, Consolidated Sanctions List, and EU sanctions lists in real-time before the wire is released. Positive matches result in immediate blocking and escalation to the sanctions officer.",
+      "topics": ["sanctions", "screening", "OFAC", "wire transfers"]
+    },
+    "aml_edd_002": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_10_2",
+      "text": "Transactions to high-risk jurisdictions must be included in enhanced monitoring reports even if they do not meet SAR filing thresholds. These reports are reviewed monthly by the BSA Officer for pattern analysis and potential escalation.",
+      "topics": ["AML", "enhanced monitoring", "high-risk jurisdictions"]
+    },
+    "privacy_limitations_001": {
+      "doc_id": "Privacy_Notice_v3.0",
+      "chunk_id": "section_6_2",
+      "text": "While customers have rights under privacy regulations including CCPA and GDPR, certain data cannot be deleted due to federal and state recordkeeping requirements. Bank Secrecy Act, anti-money laundering regulations, and tax reporting obligations mandate retention of customer identification, transaction records, and due diligence documentation for specific periods that cannot be waived.",
+      "topics": ["privacy", "data retention", "regulatory requirements", "limitations"]
+    },
+    "account_closure_001": {
+      "doc_id": "Account_Management_Policy_v3.4",
+      "chunk_id": "section_7_1",
+      "text": "Account closure requires: verification of account holder authority (or legal authority for estates, power of attorney, etc.), settlement of outstanding transactions and fees, return of debit cards and unused checks, and determination of final balance disposition.",
+      "topics": ["account closure", "procedures", "requirements"]
+    },
+    "estate_procedures_001": {
+      "doc_id": "Estate_Administration_Procedures_v1.5",
+      "chunk_id": "section_2_1",
+      "text": "Closing accounts for deceased customers requires: certified copy of death certificate, court-issued letters testamentary or letters of administration identifying the executor/administrator, completed estate claim forms, verification that no claims or holds exist against the account, and disbursement according to probate court instructions or state intestacy law if no valid will exists.",
+      "topics": ["estate", "deceased customers", "probate", "account closure"]
+    },
+    "aml_structuring_001": {
+      "doc_id": "AML_Procedures_v3.1",
+      "chunk_id": "section_5_1",
+      "text": "Structuring is the deliberate breaking down of transactions into smaller amounts to evade the $10,000 currency transaction reporting threshold. Even if no single transaction exceeds $10,000, structured transactions are inherently suspicious and must be reported via SAR filing. Multiple deposits or withdrawals in the same day that aggregate above $10,000 should be evaluated for potential structuring.",
+      "topics": ["AML", "structuring", "SAR", "CTR evasion"]
+    },
+    "kyc_remediation_001": {
+      "doc_id": "KYC_Policy_v2.3",
+      "chunk_id": "section_9_1",
+      "text": "When post-opening review identifies incomplete KYC information, immediate remediation is required: (1) contact customer to collect missing documentation within 30 days, (2) place account under enhanced monitoring, (3) implement transaction restrictions if appropriate (limit wire transfers, large cash transactions), (4) escalate to compliance if customer non-responsive, (5) initiate account closure proceedings if KYC cannot be completed within 60 days.",
+      "topics": ["KYC", "remediation", "incomplete information", "account restrictions"]
+    },
+    "account_restrictions_001": {
+      "doc_id": "Account_Management_Policy_v3.4",
+      "chunk_id": "section_5_3",
+      "text": "Account restrictions may be imposed for: incomplete KYC information, suspicious activity under investigation, regulatory holds, or court orders. Restrictions can include: limiting transaction types (e.g., no wire transfers), capping transaction amounts, requiring manager approval for specific activities, or temporary freeze pending resolution.",
+      "topics": ["account restrictions", "transaction limits", "compliance actions"]
+    }
+  }
+}
